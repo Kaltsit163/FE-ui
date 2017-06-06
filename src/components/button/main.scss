@@ -1,0 +1,75 @@
+@charset "utf-8";
+@import "../../sass/common.scss";
+
+.jo-btn {
+    display: inline-block;
+    min-width: 80px;
+    height: 30px;
+    padding: 0 15px;
+    margin: 0;
+    box-sizing: border-box;
+    border-radius: 3px;
+    text-align: center;
+    border: none;
+    outline: none;
+    font-size: 12px;
+    line-height: 1;
+    user-select: none;
+    &-default {
+        color: $font;
+        background-color: #fff;
+        border: 1px solid $border;
+        &:hover {
+            background-color: #f5f5f5;
+        }
+        &:active {
+            background-color: #e5e5e5;
+        }
+        &.disabled {
+            background-color: #fff;
+            color: $font_tb;
+            border-color: $border;
+            cursor: not-allowed;
+        }
+    }
+    &-main {
+        color: #fff;
+        background-color: $main;
+        &:hover {
+            background-color: $btn_hover;
+        }
+        &:active {
+            background-color: $btn_click;
+        }
+        &.disabled {
+            background-color: $border;
+            color: $font_tb;
+            cursor: not-allowed;
+        }
+    }
+    &-ghost {
+        color: $main;
+        background-color: #fff;
+        border: 1px solid $main;
+        &:hover {
+            color: $btn_hover;
+            border-color: $btn_hover;
+        }
+        &:active {
+            color: $btn_click;
+            border-color: $btn_click;
+        }
+        &.disabled {
+            background-color: #fff;
+            color: $font_tb;
+            border-color: $border;
+            cursor: not-allowed;
+        }
+    }
+    &-lg {
+        min-width: 160px;
+        height: 40px;
+        padding: 0 40px;
+        font-size: 16px;
+    }
+}

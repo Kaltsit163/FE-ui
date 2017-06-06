@@ -1,0 +1,133 @@
+@charset "utf-8";
+@import "../../sass/common.scss";
+@import "../../sass/icon.scss";
+
+.jo-select {
+  display: inline-block;
+  position: relative;
+  color: $font_f;
+  font-size: 12px;
+  text-align: left;
+  transition: 0.3s;
+  .select-down-content {
+    .selected-value-wrap {
+      position: relative;
+      transition:0.3s;
+      display: inline-block;
+      width: 260px;
+      height: 30px;
+      position: relative;
+      border: 1px solid $border;
+      margin: 0;
+      color: $font_f;
+      line-height: 30px;
+      text-indent: 10px;
+      overflow:hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      padding-right: 30px;
+      &:hover {
+        color: $font_i;
+        cursor: pointer;
+        transition: 0.3s;
+        border: 1px solid $main;
+        .search-input {
+          color: $font_i;
+        }
+      }
+    }
+    .jo-icon-down-arrow {
+      position: absolute;
+      display: inline-block;
+      height: 30px;
+      line-height: 30px;
+      font-size: 20px;
+      position: absolute;
+      color: $icon;
+      top: 50%;
+      right: 6px;
+      margin-top: -15px;
+      transition: 0.3s;
+      transform: rotate(0);
+    } 
+    .scroll-options {
+      display: none;
+      position: absolute;
+      width: 260px;
+      height: 150px;
+      overflow: hidden;
+      transition:0.3s;
+      .select-wrap {
+        background: #fff;
+        display: inline-block;
+        width: 280px;
+        height: 150px;
+        max-height: 150px;
+        line-height: 30px;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        transition: 0.3s;
+        > li {
+          &:nth-child(odd) {
+            background: $bg_info;
+          }
+          text-align: left;
+          p {
+            text-indent: 8px;
+            margin: 0;
+            height: 30px;
+            line-height: 30px;
+            color: $font_i;
+          }
+        }
+        .option-item {
+          border: none;
+          transition: 0.3s;
+          background: #fff;
+          padding-right: 10px;
+          > p {
+            overflow:hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          }
+          &:hover {
+            transition: 0.3s;
+            cursor: pointer;
+            background: $main;
+            > p {
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+    &.show-option {
+      .selected-value-wrap {
+        transition:0.3s;
+        border: 1px solid $main;
+      }
+      .scroll-options {
+        transition:0.3s;
+        display: block;
+        box-sizing: border-box;
+        border: 1px solid $main;
+        border-top: none;
+      }
+      .jo-icon-down-arrow {
+        transition: 0.3s;
+        transform: rotate(180deg);
+      }
+    }
+  }
+  &.disable {
+    transition:0.3s;
+    .selected-value-wrap {
+      color: $border;
+      background: $disable;
+      &:hover {
+        border: 1px solid $border;
+        cursor: not-allowed; 
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+@charset "utf-8";
+@import "../../sass/common.scss";
+
+.jo-switch {
+    display: inline-block;
+    position: relative;
+    width: 60px;
+    height: 24px;
+    box-sizing: border-box;
+    padding: 3px;
+    border-radius: 11px;
+    background-color: #e5e5e5;
+    cursor: pointer;
+    user-select: none;
+    transition: all .5s ease;
+    &-slider {
+        position: absolute;
+        top: 3px;
+        left: 3px;
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        background-color: #fff;
+        transition: all .5s ease;
+    }
+    &-text {
+        position: absolute;
+        top: 5px;
+        right: 7px;
+        font-size: 14px;
+        line-height: 14px;
+        color: #b7b7b7;
+        transition: all .5s ease;
+    }
+    &.open {
+        background-color: $main;
+        .jo-switch-slider {
+            transform: translate3d(35px, 0, 0);
+        }
+        .jo-switch-text {
+            color: #fff;
+            transform: translate3d(-24px, 0, 0);
+        }
+    }
+}

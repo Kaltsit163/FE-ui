@@ -1,0 +1,58 @@
+@charset "utf-8";
+@import "../../sass/common.scss";
+
+.jo-search {
+  display: inline-block;
+  position: relative;
+  width: 260px;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid $border;
+  color: $font_f;
+  font-size: 12px;
+  text-align: left;
+  transition: 0.3s;
+  background: #fff;
+  .search-input {
+    color: $font_f;
+    text-indent: 8px;
+    height: 25px;
+    line-height: 25px;
+    display: inline-block;
+    width: 85%;
+    border: none;
+    transition: 0.3s;
+    cursor: text;
+  }
+  .jo-icon-search {
+    font-size: 16px;
+    position: absolute;
+    color: $icon;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    &:hover {
+      cursor: pointer;
+      transition: 0.3s;
+      color: $main;
+    }
+  }
+  &.focus {
+    color: $font_i;
+    transition: 0.3s;
+    border: 1px solid $main;
+    .search-input {
+      color: $font_i;
+    }
+  }
+  &:hover {
+    color: $font_i;
+    transition: 0.3s;
+    border: 1px solid $main;
+    .search-input {
+      color: $font_i;
+    }
+  }
+}
+
+

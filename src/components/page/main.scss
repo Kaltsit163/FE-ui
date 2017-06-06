@@ -1,0 +1,65 @@
+@charset "utf-8";
+@import "../../sass/common.scss";
+
+.jo-icon {
+    color: $icon;
+}
+.ivu-page {
+    display: inline-block;
+}
+.ivu-page-item-jump-prev:hover i:after {
+    display: none;
+}
+.ivu-page-item-jump-next:hover i:after {
+    display: none;
+}
+.ivu-page-item:hover {
+  a {
+    color: $main;
+  }
+  border-color: $main !important;
+}
+.ivu-page-item-active:hover {
+     > a {
+        color: #fff ;
+    }
+}
+.ivu-page-item-active {
+    border-color: $main !important;
+    background-color: $main !important;
+}
+.ivu-page-prev .ivu-page-disabled:hover {
+    border-color: $disable;
+}
+.ivu-page-item-jump-prev:hover {
+   > a {
+    color: $font-i;
+   } 
+}
+.ivu-page-next:hover, .ivu-page-prev:hover {
+    color: $font-i;
+    border-color: $border !important;
+}
+.ivu-page-next, .ivu-page-prev {
+    border-color: $border;
+}
+.ivu-page-options-elevator {
+    > input:hover {
+        border-color: $main;
+    }
+}
+.ivu-page-options-elevator > input:hover {
+    border: 1px solid $main !important;
+}
+.ivu-icon-ios-arrow-left {
+    &:hover {
+      color: $main !important;  
+    }
+    color: $font-tb !important;
+}
+.ivu-icon-ios-arrow-right {
+    &:hover {
+      color: $main !important;  
+    }
+    color: $font_tb !important;
+}

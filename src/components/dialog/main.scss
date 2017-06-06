@@ -1,0 +1,60 @@
+@charset "utf-8";
+@import "../../sass/common.scss";
+@import "../../sass/transtion.scss";
+
+.jo-dialog {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .6);
+    &-template,
+    &-box {
+        position: relative;
+        min-width: 260px;
+        min-height: 130px;
+        max-width: 860px;
+        max-height: 680px;
+        overflow: auto;
+        box-sizing: border-box;
+        border-radius: 5px;
+        background-color: #fff;
+    }
+    &-box {
+        padding: 30px;
+    }
+    .jo-icon-close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 14px;
+        color: #ccc;
+        transition: color .15s ease;
+        cursor: pointer;
+        &:hover {
+            color: #bbb;
+        }
+    }
+    &-btns {
+        font-size: 0;
+        margin-top: 20px;
+        text-align: center;
+        button {
+            margin-right: 20px;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+    &-fade {
+        @include opacity;
+    }
+    &-scale {
+        @include scale;
+    }
+}

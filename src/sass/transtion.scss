@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+@mixin opacity {
+    &-enter-active,
+    &-leave-active {
+        transition: opacity .15s ease;
+    }
+    &-enter,
+    &-leave-active {
+        opacity: 0;
+    }
+}
+
+@mixin scale {
+    &-enter-active,
+    &-leave-active {
+        transition: transform .15s ease;
+    }
+    &-enter,
+    &-leave-active {
+        transform: scale(.8);
+    }
+}

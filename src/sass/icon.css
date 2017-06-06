@@ -1,0 +1,80 @@
+@font-face {
+  font-family: "jo-icon";
+  src: url('//at.alicdn.com/t/font_itrhsql26k98jjor.eot?t=1494829987952'); /* IE9*/
+  src: url('//at.alicdn.com/t/font_itrhsql26k98jjor.eot?t=1494829987952#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('//at.alicdn.com/t/font_itrhsql26k98jjor.woff?t=1494829987952') format('woff'), /* chrome, firefox */
+  url('//at.alicdn.com/t/font_itrhsql26k98jjor.ttf?t=1494829987952') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('//at.alicdn.com/t/font_itrhsql26k98jjor.svg?t=1494829987952#jo-icon') format('svg'); /* iOS 4.1- */
+}
+
+[class^="jo-icon"] {
+  font-family:"jo-icon" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.jo-icon-up-arrow:before { content: "\e61b"; }
+
+.jo-icon-minus:before { content: "\e663"; }
+
+.jo-icon-error:before { content: "\e614"; }
+
+.jo-icon-double-arrow-left:before { content: "\e61c"; }
+
+.jo-icon-double-arrow-right:before { content: "\e607"; }
+
+.jo-icon-warn:before { content: "\e677"; }
+
+.jo-icon-homepage:before { content: "\e778"; }
+
+.jo-icon-users:before { content: "\e779"; }
+
+.jo-icon-weixin:before { content: "\e77a"; }
+
+.jo-icon-activity:before { content: "\e77b"; }
+
+.jo-icon-sms:before { content: "\e77c"; }
+
+.jo-icon-help:before { content: "\e77d"; }
+
+.jo-icon-settings:before { content: "\e77e"; }
+
+.jo-icon-gift:before { content: "\e77f"; }
+
+.jo-icon-gou:before { content: "\e780"; }
+
+.jo-icon-msg:before { content: "\e781"; }
+
+.jo-icon-login-out:before { content: "\e782"; }
+
+.jo-icon-edit:before { content: "\e783"; }
+
+.jo-icon-delete:before { content: "\e784"; }
+
+.jo-icon-statistics:before { content: "\e785"; }
+
+.jo-icon-link:before { content: "\e786"; }
+
+.jo-icon-wait:before { content: "\e787"; }
+
+.jo-icon-online:before { content: "\e788"; }
+
+.jo-icon-offline:before { content: "\e789"; }
+
+.jo-icon-date:before { content: "\e78a"; }
+
+.jo-icon-user:before { content: "\e78b"; }
+
+.jo-icon-add:before { content: "\e78c"; }
+
+.jo-icon-down-arrow:before { content: "\e78e"; }
+
+.jo-icon-right-arrow:before { content: "\e790"; }
+
+.jo-icon-left-arrow:before { content: "\e791"; }
+
+.jo-icon-close:before { content: "\e792"; }
+
+.jo-icon-search:before { content: "\e793"; }

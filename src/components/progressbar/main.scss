@@ -1,0 +1,57 @@
+@charset "utf-8";
+@import "../../sass/common.scss";
+
+.jo-progressbar {
+    display: inline-block;
+    line-height: 1;
+    font-size: 0;
+    &-bar {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        overflow: hidden;
+        margin-right: 10px;
+        width: 280px;
+        height: 6px;
+        border-radius: 3px;
+        background-color: #eee;
+    }
+    &-inner {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 6px;
+        border-radius: 3px;
+        background-color: $main;
+        transition: width .3s ease;
+    }
+    &-progress {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 14px;
+        font-weight: bold;
+        color: $font;
+    }
+    &-success {
+        background-color: $success;
+    }
+    &-error {
+        background-color: $error;
+    }
+    &-iconsuc {
+        display: inline-block;
+        vertical-align: middle;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background-color: $success;
+    }
+    &-iconerr {
+        display: inline-block;
+        vertical-align: middle;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background-color: $error;
+    }
+}
